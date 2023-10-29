@@ -12,8 +12,7 @@ jobs:
   - name: Xcode Test
     uses: devbotsxyz/xcode-test@v1.1.0
     with:
-        # project: 'project.xsproj' # `project` and `workspace` cannot be used at the same time
-        workspace: 'testCIcd.xcodeproj\project.xcworkspace' # `project` and `workspace` cannot be used at the same time
+        workspace: 'testCIcd.xcodeproj/project.xcworkspace' # `project` and `workspace` cannot be used at the same time
         scheme: 'newApp'
         configuration: Debug
         destination: platform=iOS Simulator,OS=latest,name=iPhone 11

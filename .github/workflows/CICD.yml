@@ -23,5 +23,5 @@ jobs:
       with:
        project: newApp.xcodeproj
        scheme: newApp
-       destination: platform:iOS Simulator, id:5ECC5280-9D70-4DA9-AF79-40AAF0546AE4, OS:16.2, name:iPhone 11 Pro Max
+       destination: platform:iOS Simulator,name:iPhone 11 Pro Max
        action: test

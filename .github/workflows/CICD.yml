@@ -1,17 +1,17 @@
 name: CICD Demo
 on:
- push:
-  branches:
-   - main
- pull_request:
-  branches:
-   - main
+  pull_request:
+    branches: [ main ]
 jobs:
  build-and-test:
   runs-on: macos-latest
   steps:
   - uses: actions/checkout@v2
-  - name: Select Xcode
-    run: sudo Xcode-select -switch /Applications/Xcode_13.2.1.app
-  - name: Build & Test
-    run: xcodebuild clean build test -workspace newApp.xcodeproj/project.xcworkspace -scheme newApp -destination 'platform=iOS Simulator,name=iPhone 12 Pro,OS=15.2'
+  - name: Xcode Test
+    uses: devbotsxyz/xcode-test@v1.1.0
+    with:
+        # project: 'project.xsproj' # `project` and `workspace` cannot be used at the same time
+        workspace: 'testCIcd.xcodeproj\project.xcworkspace' # `project` and `workspace` cannot be used at the same time
+        scheme: 'newApp'
+        configuration: Debug
+        destination: platform=iOS Simulator,OS=latest,name=iPhone 11

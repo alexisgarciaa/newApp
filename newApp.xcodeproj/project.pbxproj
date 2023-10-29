@@ -20,6 +20,7 @@
 		143C963C2AEEE9E500284AC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		143C963E2AEEE9E500284AC5 /* newApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = newApp.entitlements; sourceTree = "<group>"; };
 		143C96402AEEE9E500284AC5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		143C96472AEEEC5E00284AC5 /* newApp.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = newApp.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +37,7 @@
 		143C962C2AEEE9E300284AC5 = {
 			isa = PBXGroup;
 			children = (
+				143C96472AEEEC5E00284AC5 /* newApp.xctestplan */,
 				143C96372AEEE9E300284AC5 /* newApp */,
 				143C96362AEEE9E300284AC5 /* Products */,
 			);

@@ -12,6 +12,7 @@ jobs:
   - name: Xcode Test
     uses: devbotsxyz/xcode-test@v1.1.0
     with:
+        xcode-version: latest
         workspace: 'testCIcd.xcodeproj/project.xcworkspace' # `project` and `workspace` cannot be used at the same time
         scheme: 'newApp'
         configuration: Debug

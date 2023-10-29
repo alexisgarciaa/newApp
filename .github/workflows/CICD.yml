@@ -22,7 +22,7 @@ jobs:
         bundler-cache: true
     - uses: maxim-lobanov/setup-xcode@v1
       with:
-        xcode-version: ${{ matrix.xcode.version }}
+        xcode-version: '14.3.1'
 
     - name: Xcode Test
       uses: devbotsxyz/xcode-test@v1.1.0
